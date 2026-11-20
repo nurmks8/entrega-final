@@ -1,0 +1,75 @@
+individuo.c – Buscas sequenciais
+
+No arquivo individuo.c, existem buscas sequenciais para localizar neurônios 
+por seus identificadores e procurar informações sobre as inovações das 
+conexões entre eles.
+
+O problema é que o programa precisa percorrer os elementos até encontrar 
+o que está procurando. Se a quantidade de neurônios e inovações aumentar, 
+essas buscas podem ficar mais demoradas.
+
+Uma alternativa seria utilizar árvores binárias de busca, organizando os 
+elementos pelos identificadores dos neurônios. No caso das inovações, 
+também seria possível organizar as informações utilizando os identificadores 
+dos neurônios de origem e destino como chave.
+
+Essa alternativa pode facilitar as buscas, desde que a árvore esteja organizada 
+adequadamente. Caso fique muito desbalanceada, o desempenho pode continuar 
+semelhante ao de uma busca sequencial.
+
+especie.c – Vetor com capacidade fixa
+
+No arquivo especie.c, os indivíduos de cada espécie são armazenados em um 
+vetor com capacidade máxima definida por uma constante.
+
+Isso significa que existe um limite para a quantidade de indivíduos que 
+podem ser armazenados, quando esse limite é atingido, a inclusão de novos 
+indivíduos pode provocar a interrupção do programa por causa da utilização 
+de assert.
+
+Uma melhoria seria utilizar um vetor dinâmico, aumentando sua capacidade 
+conforme a necessidade, ai não seria necessário depender de uma quantidade 
+máxima definida antes.
+
+Considero que o vetor dinâmico seria uma boa alternativa porque o programa 
+acessa os indivíduos por posição e também realiza operações de ordenação.
+
+geracao.c – Vetores com capacidade fixa
+
+No arquivo geracao.c, também são utilizados vetores com capacidades máximas 
+definidas por constantes para armazenar os indivíduos e as espécies de cada geração.
+
+Assim como acontece em especie.c, essa escolha estabelece um limite para 
+a quantidade de elementos armazenados, o que pode dificultar o crescimento do programa.
+
+Uma possibilidade seria utilizar vetores dinâmicos, permitindo aumentar a 
+capacidade de armazenamento conforme a necessidade do treinamento.
+
+Essa mudança manteria a facilidade de acesso aos elementos por posição e também 
+permitiria continuar utilizando as operações de ordenação já presentes no código.
+
+jogo.c – Verificação das posições ocupadas
+
+O corpo da cobra é armazenado em uma fila, o que é adequado para 
+inserir a nova posição da cabeça e remover a posição da cauda.
+
+Porém, a verificação de uma posição ocupada percorre os elementos da fila. Uma 
+possibilidade de melhoria seria utilizar uma matriz auxiliar para consultar 
+diretamente as posições ocupadas do tabuleiro, sem precisar percorrer toda a fila.
+
+grafo.c
+
+Uma melhoria que eu sugeriria para a interface do grafo seria modificar 
+a forma como as consultas às arestas são realizadas. Atualmente, as 
+funções "g_arestas_que_partem" e "g_arestas_que_chegam" utilizam o mesmo 
+controle interno para armazenar a consulta, ai quando uma nova consulta é 
+iniciada, a anterior é substituída.
+
+Seria interessante permitir que diferentes consultas fossem realizadas de 
+forma independente. Outra possibilidade seria adicionar uma função para 
+percorrer todas as arestas do grafo diretamente, sem precisar fazer uma 
+consulta para cada nó.
+
+Acredito que essas alterações facilitariam o uso do grafo pelo programa 
+de treinamento, principalmente porque a rede neural precisa acessar suas 
+sinapses, representadas pelas arestas, em diferentes operações.
