@@ -1,0 +1,27 @@
+// AUTOAVALIAÇÃO
+
+Nota de autoavaliação: 7,5
+
+Em relação aos trabalhos, procurei fazer o que foi solicitado e colocar em prática os conteúdos vistos nas aulas, também tive dificuldade para entender o UTF-8 
+e como utilizá-lo junto com a TAD String que tivemos que desenvolver no Trabalho 2 mesmo assim, considero que os trabalhos práticos foram muito importantes para 
+aprender, pois precisei testar os códigos, corrigir erros e buscar entender melhor como cada estrutura funcionava.
+
+
+Avaliação dos conteúdos:
+
+Tipos abstratos de dados (TADs): 6,0
+Implementação de TADs em C: 6,0
+Listas e suas derivações (pilhas, filas e deques): 8,5
+Implementação de listas em alocação contígua: 8,0
+Implementação de listas encadeadas (encadeamento simples e duplo): 8,5
+Árvores binárias: 7,5
+Árvores binárias de busca (auto-equilibradas ou não): 7,0
+Grafos: 7,0
+Implementações de grafos: 7,0
+Algoritmos em grafos: 7,0
+
+tive mais facilidade com os conteúdos relacionados a listas, pilhas, filas e deques, Ja os TADs e sua implementação em C foram assuntos que me deram bastante 
+dificuldade, principalmente no começo da disciplina, também tive algumas dificuldades com árvores e grafos, mas os trabalhos ajudaram a entender melhor esses 
+conteúdos na prática.
+Acredito que evoluí durante o semestre, mesmo tendo mais dificuldade em alguns assuntos do que em outros, sei que ainda preciso praticar e aprofundar alguns 
+conteudos, mas considero que os trabalhos contribuiram bastante para meu aprendizado.
